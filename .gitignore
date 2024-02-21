@@ -1,0 +1,8 @@
+frontend/react-library/node_modules/
+frontend/react-library/.build/
+
+.env
+.DS_Store
+.eslintcache
+/coverage
+config/secret.js
