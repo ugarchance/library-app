@@ -5,11 +5,13 @@ import { Navbar } from "./layouts/NavBarAndFooter/Navbar";
 
 import { HomePage } from "./layouts/HomePage/HomePage";
 import { Footer } from "./layouts/NavBarAndFooter/Footer";
+import { SearchBooksPage } from "./layouts/SearchBooksPage/SearchBooksPage";
 export const App = () => {
   return (
     <div>
       <Navbar />
-      <HomePage />
+      {/* <HomePage /> */}
+      <SearchBooksPage />
       <Footer />
     </div>
   );
