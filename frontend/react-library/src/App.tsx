@@ -2,15 +2,15 @@ import React from "react";
 
 import "./App.css";
 import { Navbar } from "./layouts/NavBarAndFooter/Navbar";
-import { ExploreTopBooks } from "./layouts/HomePage/ExploreTopBooks";
 
-function App() {
+import { HomePage } from "./layouts/HomePage/HomePage";
+import { Footer } from "./layouts/NavBarAndFooter/Footer";
+export const App = () => {
   return (
     <div>
       <Navbar />
-      <ExploreTopBooks />
+      <HomePage />
+      <Footer />
     </div>
   );
-}
-
-export default App;
+};
