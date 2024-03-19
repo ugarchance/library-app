@@ -8,6 +8,5 @@ import org.ugarchance.springbootlibrary.entity.Review;
 
 
 public interface ReviewRepository extends JpaRepository<Review,Long> {
-
     Page<Review> findById(@RequestParam("book_id") Long bookId, Pageable pageable);
 }

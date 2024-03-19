@@ -22,10 +22,10 @@ public class DataRestConfig implements RepositoryRestConfigurer {
         config.exposeIdsFor(Review.class);
 
         disableHttpMethods(Book.class, config, theUnsupportedActions);
-        disableHttpMethods(Review.class,config,theUnsupportedActions);
+        disableHttpMethods(Review.class, config, theUnsupportedActions);
 
         /* Configure CORS MApping*/
-        cors.addMapping(config.getBasePath()+"/**")
+        cors.addMapping(config.getBasePath() + "/**")
                 .allowedOrigins(theAllowedOrigins);
     }
 
@@ -41,3 +41,4 @@ public class DataRestConfig implements RepositoryRestConfigurer {
     }
 
 }
+
